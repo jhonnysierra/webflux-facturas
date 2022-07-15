@@ -29,11 +29,11 @@ public class ImpFacturaService implements IFacturaService {
 
     @Override
     public Flux<Factura> listarFacturas() {
-        facturas.subscribe(System.out::println);
-        /*
+        facturas.subscribe(System.out::println);//x->System.out.println(X)
+/*
         Flux<Producto> productosFlux = productos.get().retrieve().bodyToFlux(Producto.class);
         productosFlux.subscribe(System.out::println);
-        */
+*/
         return facturas;
     }
 
